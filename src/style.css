@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply max-w-5xl w-full mx-auto flex items-center; 
+  }
+
+  .menu-focus{
+    @apply px-2 hover:after:content-[''] hover:after:w-full hover:after:h-2  hover:after:bottom-0 hover:after:left-0 hover:after:absolute  hover:after:bg-orange;
+  }
+
+  .divider-gradient{
+    @apply h-1 bg-gradient-to-l from-gray-700 to-transparent;
+  }
+}
